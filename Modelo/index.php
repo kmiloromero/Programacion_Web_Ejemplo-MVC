@@ -4,7 +4,7 @@ class Modelo{
     private $db;
     public function __construct(){
         $this->Modelo = array();
-        $this->db=new PDO('mysql:host=localhost;dbname=mvc',"root","");
+        $this->db=new PDO('mysql:host=localhost;dbname=myslej',"root","");
     }
     public function insertar($tabla, $data){
         $consulta="insert into ".$tabla." values(null,". $data .")";
